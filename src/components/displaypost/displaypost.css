@@ -1,0 +1,50 @@
+
+
+.display_container{
+    width: 540px;
+    background: #fff;
+    border: 1px solid #666666;
+    border-radius: 8px;
+}
+
+.Displaypost_container{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 16px 0;
+
+}
+
+.socials{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socials > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* .like{
+    color: white;
+} */
+
+.active{
+    color: #0a66c2;
+}
+
+
+.socials >div >p{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
+}
+.post_content{
+    padding: 8px 16px 0;
+
+}
