@@ -1,0 +1,142 @@
+.leftsidebar_container {
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leftProfile_container {
+  position: relative;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #666666;
+}
+
+.bgimg_container {
+  height: 56px;
+  width: 100%;
+}
+
+.bgimg_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.profile_container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgb(248, 186, 62);
+}
+
+.plaindiv {
+  width: 201px;
+  height: 51px;
+}
+
+.name_div {
+  text-align: center;
+  border-bottom: 2px solid #f3f2ef;
+  margin-bottom: 10px;
+}
+
+.name_div h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.connections_container {
+  padding: 12px;
+  font-size: 12px;
+  color: #00000099;
+}
+
+.connections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.connections p:first-child {
+  font-weight: 500;
+}
+
+.connections p:last-child {
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+.network p {
+  color: black;
+  font-weight: 600;
+}
+
+.visited {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visited p {
+  font-weight: 600;
+}
+
+.visited p:last-child {
+  color: #0a66c2;
+}
+
+.myItem_container {
+  display: flex;
+  font-size: 12px;
+  color: #666666;
+  gap: 13px;
+  align-items: center;
+  padding: 12px;
+  border-top: 2px solid #f3f2ef;
+}
+
+.group_conatiner {
+  background: #fff;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #666666;
+}
+
+.group p {
+  padding: 4px;
+
+  font-weight: 600;
+}
+
+.events {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.events p {
+  padding: 4px;
+  font-weight: 600;
+}
+
+.followed p {
+  padding: 4px;
+  font-weight: 600;
+}
+
+.discover {
+  margin-top: 5px;
+  color: #666666;
+  border-top: 2px solid #f3f2ef;
+}
+
+.discover p {
+  padding: 4px;
+  font-weight: 600;
+}
