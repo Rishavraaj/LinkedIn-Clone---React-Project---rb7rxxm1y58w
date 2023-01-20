@@ -5,8 +5,12 @@ import user from "../../user";
 import Homepage from "../HomePage/Homepage";
 
 const Login = () => {
-  const [userdata, setUserdata] = useState("");
-  const [userpass, setUserpass] = useState("");
+  const [userdata, setUserdata] = useState(
+    sessionStorage.getItem("userdata") || ""
+  );
+  const [userpass, setUserpass] = useState(
+    sessionStorage.getItem("userpass") || " "
+  );
   const [isLoggedIn, setIsLoggedIn] = useState(
     sessionStorage.getItem("isLoggedIn") === "true"
   );
@@ -23,8 +27,9 @@ const Login = () => {
     e.preventDefault();
     if (checkCredentials(userdata, userpass)) {
       sessionStorage.setItem("isLoggedIn", true);
+      sessionStorage.setItem("userpass", userpass);
+      sessionStorage.setItem("userdata", userdata);
       setIsLoggedIn(true);
-      // console.log("sucess");
     }
   };
 

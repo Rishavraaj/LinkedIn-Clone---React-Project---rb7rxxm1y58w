@@ -12,7 +12,7 @@ const user = [
   {
     id: 3,
     email: "Aman",
-    password: "ayush",
+    password: "aman",
   },
   {
     id:4,

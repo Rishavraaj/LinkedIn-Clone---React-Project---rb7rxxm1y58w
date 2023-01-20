@@ -9,17 +9,18 @@ const Comment = ({ postId, CommentBy }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setComment([
-      ...comment,
-      {
-        id: comment.length + 1,
-        postId: postId,
-        comment: newComment,
-        commentedBy: CommentBy,
-        createdAt: new Date(),
-      },
-    ]);
-    localStorage.setItem(`post-${postId}-comments`, JSON.stringify(comment));
+    const commentData = {
+      id: comment.length + 1,
+      postId: postId,
+      comment: newComment,
+      commentedBy: CommentBy,
+      createdAt: new Date(),
+    };
+    setComment([...comment, commentData]);
+    localStorage.setItem(
+      `post-${postId}-comments`,
+      JSON.stringify([...comment, commentData])
+    );
     setnewComment("");
   };
 

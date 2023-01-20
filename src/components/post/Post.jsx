@@ -22,7 +22,7 @@ const Post = ({ email, password }) => {
       id: Date.now(),
     };
     setData([...data, newData]);
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("data", JSON.stringify([...data, newData]));
     setnewPost("");
   };
 
@@ -43,7 +43,6 @@ const Post = ({ email, password }) => {
     setLikes(newLikes);
     localStorage.setItem("likes", JSON.stringify(newLikes));
   };
-
   return (
     <div className="mainpost_container">
       <div className="post_Container">
@@ -87,6 +86,7 @@ const Post = ({ email, password }) => {
             emaildata={ele.email}
             email={email}
             id={ele.id}
+            data={data}
             password={password}
             handleLike={handleLike}
           />

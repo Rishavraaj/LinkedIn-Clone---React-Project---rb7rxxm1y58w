@@ -9,7 +9,6 @@ const Displaypost = ({ ele, email, emaildata, handleLike, id }) => {
   const likes = JSON.parse(localStorage.getItem("likes")) || {};
 
   const totalLikes = likes[id] ? likes[id]["total"] : 0;
-  console.log(totalLikes);
 
   const [showComments, setshowComments] = useState(false);
 
